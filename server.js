@@ -4,7 +4,6 @@ import errorHandler from './middlewares/errorHandler';
 import routes from './routes';
 import mongoose from 'mongoose';
 import path from 'path';
-// import cors from 'cors';
 
 const app = express();
 
@@ -17,7 +16,6 @@ db.once('open', () => {
 });
 
 global.appRoot = path.resolve(__dirname);
-// app.use(cors());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use('/api', routes);

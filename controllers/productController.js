@@ -3,7 +3,7 @@ import multer from 'multer';
 import path from 'path';
 import CustomErrorHandler from '../services/CustomErrorHandler';
 import fs from 'fs';
-import Joi from 'joi';
+// import Joi from 'joi';
 import productSchema from '../validators/productValidator';
 
 const storage = multer.diskStorage({
